@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f5f7fa, #e8ebf2);
+    color: #333;
+}
+
+header {
+    background-color: #004d7a;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+.form-section {
+    margin-bottom: 40px;
+}
+
+.form-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #004d7a;
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.input-group span {
+    font-size: 0.9em;
+    color: #555;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Results Section */
+.results-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #004d7a;
+}
+
+.result-item {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.result-item strong {
+    flex: 1;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.result-item span {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #004d7a;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .form-section h3, .results-section h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 0.9em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    button {
+        width: 100%;
+    }
+}

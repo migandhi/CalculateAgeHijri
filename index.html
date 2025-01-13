@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - Dawoodi Bohra Hijri Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Age Calculator</h1>
+            <h2>According to Dawoodi Bohra Hijri Calendar</h2>
+        </div>
+    </header>
+    <main>
+        <section class="form-section">
+            <h3>Enter Your Details</h3>
+            <form id="birthDateForm">
+                <label for="birthDate">Your Gregorian Birthdate:</label>
+                <div class="input-group">
+                    <input type="date" id="birthDatePicker" placeholder="YYYY-MM-DD">
+                    <span>or</span>
+                    <input type="text" id="birthDateText" placeholder="YYYY-MM-DD">
+                </div>
+                <button type="submit">Calculate</button>
+            </form>
+        </section>
+
+        <section id="results" class="results-section">
+            <h3>Results</h3>
+            <div class="result-item">
+                <strong>Gregorian Age:</strong>
+                <span id="gregorianAge">---</span>
+            </div>
+            <div class="result-item">
+                <strong>Hijri Age:</strong>
+                <span id="hijriAge">---</span>
+            </div>
+            <div class="result-item">
+                <strong>Today's Hijri Date:</strong>
+                <span id="todaysHijri">---</span>
+            </div>
+            <div class="result-item">
+                <strong>Today's Gregorian Date:</strong>
+                <span id="todaysGregorian">---</span>
+            </div>
+            <div class="result-item">
+                <strong>Upcoming Birthday (Hijri):</strong>
+                <span id="hijriBirthday">---</span>
+            </div>
+            <div class="result-item">
+                <strong>Upcoming Birthday (Gregorian):</strong>
+                <span id="gregorianBirthday">---</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Age Calculator - Dawoodi Bohra Hijri Calendar. All rights reserved.</p>
+    </footer>
+    <script src="hijriDate.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
