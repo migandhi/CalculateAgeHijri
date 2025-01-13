@@ -23,8 +23,17 @@
                     <span>or</span>
                     <input type="text" id="birthDateText" placeholder="YYYY-MM-DD">
                 </div>
+                <label for="futureDate">Optional: Check Age on Future Date (Gregorian):</label>
+                <input type="date" id="futureDatePicker" placeholder="YYYY-MM-DD">
                 <button type="submit">Calculate</button>
             </form>
+        </section>
+
+        <section id="birthdayWishSection" class="results-section">
+            <h3>Special Message</h3>
+            <div class="result-item">
+                <span id="birthdayWish">---</span>
+            </div>
         </section>
 
         <section id="results" class="results-section">
@@ -36,6 +45,10 @@
             <div class="result-item">
                 <strong>Hijri Age:</strong>
                 <span id="hijriAge">---</span>
+            </div>
+            <div class="result-item">
+                <strong>Age on Future Date:</strong>
+                <span id="futureAge">---</span>
             </div>
             <div class="result-item">
                 <strong>Today's Hijri Date:</strong>
